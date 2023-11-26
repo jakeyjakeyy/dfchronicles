@@ -1,0 +1,63 @@
+@import "../root.css";
+
+.Nav {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  height: 100vh;
+  align-items: center;
+  padding: 1rem;
+  /* border-right: 1px solid var(--accent); */
+  font-size: 1.3rem;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+.Nav-Border {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1px;
+  background-color: var(--accent);
+  max-height: 95vh;
+}
+
+.NavItem,
+.Login,
+.Username {
+  margin-bottom: 1rem;
+  color: var(--text);
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+.NavItem:hover,
+.Username:hover {
+  color: var(--primary);
+  text-shadow: 0 0 8px var(--primary);
+}
+.Login:hover {
+  color: rgb(190, 108, 108);
+  text-shadow: 0 0 8px rgb(219, 70, 70);
+}
+
+@media (max-width: 767px) {
+  .Nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 75px;
+    border-right: none;
+    border-bottom: 1px solid var(--accent);
+    padding: 0 1rem 0 1rem;
+    z-index: 1;
+    background-color: var(--background);
+  }
+  .NavItem,
+  .Login,
+  .Username {
+    margin-right: 0.5rem;
+    margin-bottom: 0;
+    color: var(--text);
+    cursor: pointer;
+  }
+}

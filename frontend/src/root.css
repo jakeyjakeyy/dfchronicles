@@ -1,0 +1,7 @@
+:root[data-theme="dark"] {
+  --text: #ffffff;
+  --background: #18181b;
+  --primary: #e28878;
+  --secondary: #0b3225;
+  --accent: #35bcd4;
+}

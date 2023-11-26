@@ -1,0 +1,124 @@
+@import "../root.css";
+
+.ViewGen {
+  display: flex;
+  flex-direction: column;
+  margin: 0 2rem 0;
+}
+.ViewGenHeader {
+  position: sticky;
+  top: 0;
+  padding: 1rem 0 0;
+  background-color: var(--background);
+}
+
+.Favorite {
+  width: fit-content;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.Rating {
+  width: fit-content;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.ViewGenContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid var(--primary);
+  background-color: var(--background);
+  color: var(--text);
+  border-radius: 10px;
+  padding: 0 1rem 1rem;
+  margin: 1rem;
+
+  p {
+    transform: translateY(-0.5rem);
+  }
+}
+
+.CommentsDiv {
+  margin: 1rem 0 3rem;
+}
+
+.CommentsHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.CommentForm {
+  margin: 1rem 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.CommentInput {
+  width: 75%;
+  height: 3rem;
+  border: 1px solid var(--primary);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  background-color: var(--background);
+  color: var(--text);
+  white-space: pre-wrap;
+}
+
+.CommentSubmit {
+  margin-top: 0.5rem;
+  width: 25%;
+  height: 3rem;
+  border: 1px solid var(--primary);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  background-color: var(--background);
+  color: var(--text);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.CommentSubmit:hover {
+  background-color: var(--primary);
+  color: var(--background);
+}
+
+.GenComments {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.ViewGenComment {
+  white-space: pre-wrap;
+  margin: 1rem 1rem 0.5rem;
+  box-shadow: 0 0 10px var(--secondary);
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem 0.5rem;
+  width: 95%;
+}
+
+.ViewGenCommentHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.DeleteComment {
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+.DeleteComment:hover {
+  color: rgb(165, 69, 69);
+}
+
+.ViewGenCommentContent {
+  margin-top: 0.3rem;
+}

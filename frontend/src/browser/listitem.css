@@ -1,0 +1,81 @@
+@import "../root.css";
+
+.ListItems {
+  margin-top: 1rem;
+}
+.ListItemsCategories {
+  margin-top: 8rem;
+}
+
+.ListItem {
+  border: 1px solid var(--secondary);
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--secondary);
+  width: 99%;
+  margin-bottom: 0.5rem;
+  transition: all 0.3s ease-in-out;
+  padding: 0.5rem;
+}
+.ListItem:hover {
+  border: 1px solid var(--accent);
+  box-shadow: 0 0 10px var(--accent);
+  transform: scale(1.01);
+  cursor: pointer;
+}
+
+.ListItemName {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+  margin-left: 0.5rem;
+  margin-top: 0.1rem;
+}
+
+.ListItemName2 {
+  font-size: 1.1rem;
+  font-weight: lighter;
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+  max-height: 2.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ListItemInfo {
+  display: flex;
+  align-items: center;
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: lighter;
+  small {
+    display: flex;
+    align-self: center;
+    font-size: 0.8rem;
+    margin: 0.2rem 0.2rem 0 0.2rem;
+  }
+}
+
+.ListItemRating,
+.ListItemFavorites,
+.ListItemComments {
+  display: flex;
+  align-items: center;
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: lighter;
+  small {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    margin: 0.2rem 0.2rem 0 0.2rem;
+  }
+}
+
+.ListItemUsername {
+  margin-bottom: 0.5rem;
+  margin-left: 0.5rem;
+  max-height: 2.5rem;
+  overflow: hidden;
+  color: var(--accent);
+}

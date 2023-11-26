@@ -1,0 +1,37 @@
+@import "root.css";
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-body {
+  background-color: var(--background);
+  min-height: 95vh;
+  display: flex;
+  flex-direction: row;
+  font-size: 1rem;
+  color: var(--text);
+  overflow: hidden;
+}
+.App-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(32, 30, 30);
+  color: var(--text);
+  height: 5vh;
+  font-size: 1rem;
+}
+.Footer-Github,
+.Footer-Mail {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 767px) {
+  .App-header {
+    flex-direction: column;
+    font-size: calc(10px + 2.5vmin);
+  }
+}
