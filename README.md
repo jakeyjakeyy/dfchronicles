@@ -81,19 +81,19 @@ Generate stories from Dwarf Fortress legends data with GPT-4.
 
 - **browser.css & browser.js**
 
-  - Style and function of the main browser div for displaying apps.
+  - Style and function of the main browser div for displaying components.
 
 - **listitem.css & listitem.js**
 
-  - Reusable app to display various information on a card.
+  - Reusable component to display various information on a card.
 
 - **rating.js**
 
-  - Simple app for handling user rating of a generation.
+  - Simple component for handling user rating of a generation.
 
 - **viewgen.css & viewgen.js**
 
-  - App for displaying a generation's information, including comments and ratings.
+  - Component for displaying a generation's information, including comments and ratings.
 
 - **upload/upload.css & upload/uploadxmlform.js**
 
@@ -133,7 +133,7 @@ Generate stories from Dwarf Fortress legends data with GPT-4.
   - Creates a popup overlay for user login and registration.
 
 - **navbar.css & navbar.js**
-  - Main element and functionality of the navbar app, changing what is displayed in the Browser app.
+  - Main element and functionality of the navbar component, changing what is displayed in the Browser component.
 
 ### Utils
 
@@ -151,7 +151,7 @@ Generate stories from Dwarf Fortress legends data with GPT-4.
 
 - **getuser.js**
 
-  - Handles API calls to return relevant user data for the UserPage app.
+  - Handles API calls to return relevant user data for the UserPage component.
 
 - **refreshtoken.js & refreshtoken.test.js**
   - Handles API calls to return a valid token to the user. Testing file ensures intended functionality.
