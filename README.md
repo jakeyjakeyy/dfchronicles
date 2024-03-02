@@ -1,6 +1,6 @@
 # Dwarf Fortress Chronicles
 
-Generate stories from Dwarf Fortress legends data with GPT-4.
+Generate stories from Dwarf Fortress legends data with ChatGPT.
 
 - [Distinctiveness and Complexity](#distinctiveness-and-complexity)
 
