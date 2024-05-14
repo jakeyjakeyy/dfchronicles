@@ -81,19 +81,19 @@ Generate stories from Dwarf Fortress legends data with GPT-4.
 
 - **browser.css & browser.js**
 
-  - Style and function of the main browser div for displaying apps.
+  - Style and function of the main browser div for displaying components.
 
 - **listitem.css & listitem.js**
 
-  - Reusable app to display various information on a card.
+  - Reusable component to display various information on a card.
 
 - **rating.js**
 
-  - Simple app for handling user rating of a generation.
+  - Simple component for handling user rating of a generation.
 
 - **viewgen.css & viewgen.js**
 
-  - App for displaying a generation's information, including comments and ratings.
+  - Component for displaying a generation's information, including comments and ratings.
 
 - **upload/upload.css & upload/uploadxmlform.js**
 
@@ -133,7 +133,7 @@ Generate stories from Dwarf Fortress legends data with GPT-4.
   - Creates a popup overlay for user login and registration.
 
 - **navbar.css & navbar.js**
-  - Main element and functionality of the navbar app, changing what is displayed in the Browser app.
+  - Main element and functionality of the navbar component, changing what is displayed in the Browser component.
 
 ### Utils
 
@@ -151,7 +151,7 @@ Generate stories from Dwarf Fortress legends data with GPT-4.
 
 - **getuser.js**
 
-  - Handles API calls to return relevant user data for the UserPage app.
+  - Handles API calls to return relevant user data for the UserPage component.
 
 - **refreshtoken.js & refreshtoken.test.js**
   - Handles API calls to return a valid token to the user. Testing file ensures intended functionality.
@@ -181,6 +181,18 @@ Generate stories from Dwarf Fortress legends data with GPT-4.
   - Create a `.env` file in `dfchronicles/` if it doesn't exist.
   - Add the following line to the `.env` file, inserting your OpenAI API key: `OPENAI_API_KEY=your_openAI_API_key`.
 
+- **.env:** Add a secret key for django.
+  In a terminal with django installed, enter the following code:
+  ```
+  python -c 'from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())'
+  ```
+  - Create a `.env` file in `dfchronicles/` if it doesn't exist.
+  - Add the following line to .env
+  ```
+  SECRET_KEY=GENERATED_KEY
+  ```
+  Repacing 'GENERATED_KEY' with the output of the previous command.
+
 ## 2. **Accessing the Site**
 
 - **Frontend:** `localhost:3000`
@@ -195,4 +207,4 @@ Generate stories from Dwarf Fortress legends data with GPT-4.
 
 ## Note:
 
-- Ensure your `.env` file is configured with a valid OpenAI API key for generations to occur. Tiktoken is used to ensure only generations under a reasonable size will be sent to the API. This step is not necessary and a default response will be sent from the server if no API key can be found.
+- Ensure your `.env` file is configured with a valid OpenAI API key for generations to occur. Tiktoken is used to ensure only generations under a reasonable size will be sent to the API. A default response will be sent from the server if no API key can be found.
